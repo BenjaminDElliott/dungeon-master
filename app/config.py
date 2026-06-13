@@ -14,10 +14,9 @@ class Settings(BaseSettings):
     app_name: str = "Dungeon Master"
     debug: bool = True
 
-    # LLM / OpenRouter
-    openrouter_api_key: str = ""
-    openrouter_base_url: str = "https://openrouter.ai/api/v1"
-    llm_model: str = "meta-llama/llama-3.1-8b-instruct:free"
+    # LLM / Local Llama Server
+    llm_api_base: str = "http://localhost:8000/v1"
+    llm_model: str = "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf"
     llm_temperature: float = 0.8
     llm_max_tokens: int = 512
 
@@ -37,3 +36,4 @@ def get_settings() -> Settings:
     Cached so that the app reads env vars once at startup.
     """
     return Settings()
+
