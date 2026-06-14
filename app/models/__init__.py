@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """Data models and persistence for Dungeon Master game state.
 
 This module provides:
@@ -21,3 +22,6 @@ __all__ = [
     "GameDatabaseError",
     "seed_initial_world",
 ]
+=======
+"""Models package for Dungeon Master RPG."""
+>>>>>>> 0a5e73a (feat: implement world design and content creation (LAT-157 Task 4))
