@@ -11,3 +11,4 @@
 
 ## Status
 Agent dispatched — implementing polish, testing, and demo.
+# LAT-158 2D Graphics Engine
